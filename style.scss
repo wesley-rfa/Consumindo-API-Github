@@ -1,0 +1,82 @@
+$color_body: #0d1117;
+$color_font_header: #ffffff;
+
+body {
+    font-family: cursive;
+    padding: 0px;
+    margin: 0px;
+    background: $color_body;
+}
+
+.header {
+    background-color: #161B22;
+    color: $color_font_header;
+    #icone_git {
+        font-size: 30px;
+        margin-right: 5px;
+    }
+    .titulo {
+        font-size: 26px;
+    }
+}
+
+#input_area {
+    .btn-submit {
+        color: #c9d1d9;
+        background-color: #30363d;
+        border: 1px solid #30363d;
+
+        &:hover {
+            background-color: #4b545e;
+            border: 1px solid #a1abb5;
+        }
+    }
+}
+
+.card{
+    background-color: #161B22;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0, 15, 0.4), 0 5px 20px rgba(5,020, 15, 0.3);
+    transition: 0.5s;
+    margin: 20px;
+    &:hover{
+        background-color: #202731;
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+    .icon_git{
+        color: #c9d1d9;
+        font-size: 20px;
+    }
+    img{
+        border-radius: 100px;
+        height: 120px;
+        width: 120px;
+    }
+    .name{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    .user{
+        color: #c9d1d9;
+        font-size: 13px;
+        font-weight: 300;
+    }
+    .infos{
+        color: #c9d1d9;
+        border-radius: 10px;
+        font-size: 15px;
+        font-weight: 300;
+        .info-item{
+            padding: 5px;
+            margin: 5px;
+            .number{
+                font-size: 28px;
+                font-weight: 500;
+            }
+            
+        }
+    }
+}

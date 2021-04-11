@@ -1,1 +1,90 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  font-family: cursive;
+  padding: 0px;
+  margin: 0px;
+  background: #0d1117;
+}
+
+.header {
+  background-color: #161B22;
+  color: #ffffff;
+}
+
+.header #icone_git {
+  font-size: 30px;
+  margin-right: 5px;
+}
+
+.header .titulo {
+  font-size: 26px;
+}
+
+#input_area .btn-submit {
+  color: #c9d1d9;
+  background-color: #30363d;
+  border: 1px solid #30363d;
+}
+
+#input_area .btn-submit:hover {
+  background-color: #4b545e;
+  border: 1px solid #a1abb5;
+}
+
+.card {
+  background-color: #161B22;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 15, 0.4), 0 5px 20px rgba(5, 20, 15, 0.3);
+          box-shadow: 0 5px 15px rgba(0, 0, 15, 0.4), 0 5px 20px rgba(5, 20, 15, 0.3);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 20px;
+}
+
+.card:hover {
+  background-color: #202731;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  cursor: pointer;
+}
+
+.card .icon_git {
+  color: #c9d1d9;
+  font-size: 20px;
+}
+
+.card img {
+  border-radius: 100px;
+  height: 120px;
+  width: 120px;
+}
+
+.card .name {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.card .user {
+  color: #c9d1d9;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.card .infos {
+  color: #c9d1d9;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.card .infos .info-item {
+  padding: 5px;
+  margin: 5px;
+}
+
+.card .infos .info-item .number {
+  font-size: 28px;
+  font-weight: 500;
+}
+/*# sourceMappingURL=style.css.map */
