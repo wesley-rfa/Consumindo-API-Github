@@ -87,3 +87,18 @@ body {
         }
     }
 }
+
+
+#footer{
+    background-color:#161b22;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: 1s;
+    a{
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+        color: #4EA0FF;
+    }
+}

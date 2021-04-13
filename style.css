@@ -99,4 +99,20 @@ body {
   font-size: 28px;
   font-weight: 500;
 }
+
+#footer {
+  background-color: #161b22;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#footer a {
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  color: #4EA0FF;
+}
 /*# sourceMappingURL=style.css.map */
