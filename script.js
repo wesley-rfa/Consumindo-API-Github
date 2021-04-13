@@ -1,3 +1,13 @@
+$("#btn_limpar").hide()
+
+
+//---------------------LIMPA CONTEÚDO----------------------//
+$("#btn_limpar").click(function () {
+    $("#conteudo").html("")
+    $("#btn_limpar").hide()
+});
+
+//------------------BUSCA USUÁRIO NA API-------------------//
 $("#btn_buscar").click(function () {
     event.preventDefault()
     let usuario = $("#form_usuario").val()
@@ -29,6 +39,7 @@ $("#btn_buscar").click(function () {
         </div>`
             $("#conteudo").append(concat)
             $("#form_usuario").val("")
+            $("#btn_limpar").show()
         }, error: function () {
             console.log("erro!!")
             $("#form_usuario").val("")

@@ -6,7 +6,7 @@ body {
 }
 
 .header {
-  background-color: #161B22;
+  background-color: #161b22;
   color: #ffffff;
 }
 
@@ -19,19 +19,31 @@ body {
   font-size: 26px;
 }
 
-#input_area .btn-submit {
+#input_area .btn {
   color: #c9d1d9;
   background-color: #30363d;
   border: 1px solid #30363d;
+  border-radius: 10px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 #input_area .btn-submit:hover {
-  background-color: #4b545e;
-  border: 1px solid #a1abb5;
+  color: #ffffff;
+  background: linear-gradient(45deg, #1a9e76, #1abe8d);
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+
+#input_area .btn-limpar:hover {
+  color: #ffffff;
+  background: linear-gradient(45deg, #e60f33, #ff193f);
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
 }
 
 .card {
-  background-color: #161B22;
+  background-color: #161b22;
   border-radius: 15px;
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 15, 0.4), 0 5px 20px rgba(5, 20, 15, 0.3);
           box-shadow: 0 5px 15px rgba(0, 0, 15, 0.4), 0 5px 20px rgba(5, 20, 15, 0.3);

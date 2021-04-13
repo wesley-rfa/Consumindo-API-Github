@@ -9,7 +9,7 @@ body {
 }
 
 .header {
-    background-color: #161B22;
+    background-color: #161b22;
     color: $color_font_header;
     #icone_git {
         font-size: 30px;
@@ -21,63 +21,69 @@ body {
 }
 
 #input_area {
-    .btn-submit {
+    .btn {
         color: #c9d1d9;
         background-color: #30363d;
         border: 1px solid #30363d;
+        border-radius: 10px;
+        transition: 0.8s;
+    }
 
-        &:hover {
-            background-color: #4b545e;
-            border: 1px solid #a1abb5;
-        }
+    .btn-submit:hover {
+        color: #ffffff;
+        background: linear-gradient(45deg,#1a9e76,#1abe8d);
+        transform: translateY(-10%);
+    }
+    .btn-limpar:hover {
+        color: #ffffff;
+        background: linear-gradient(45deg,#e60f33,#ff193f);
+        transform: translateY(-10%);
     }
 }
 
-
-.card{
-    background-color: #161B22;
+.card {
+    background-color: #161b22;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0, 15, 0.4), 0 5px 20px rgba(5,020, 15, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 15, 0.4), 0 5px 20px rgba(5, 020, 15, 0.3);
     transition: 0.5s;
     margin: 20px;
-    &:hover{
+    &:hover {
         background-color: #202731;
         transform: scale(1.05);
         cursor: pointer;
     }
-    .icon_git{
+    .icon_git {
         color: #c9d1d9;
         font-size: 20px;
     }
-    img{
+    img {
         border-radius: 100px;
         height: 120px;
         width: 120px;
     }
-    .name{
+    .name {
         color: #fff;
         font-size: 20px;
         font-weight: 500;
         letter-spacing: 1px;
     }
-    .user{
+    .user {
         color: #c9d1d9;
         font-size: 13px;
         font-weight: 300;
     }
-    .infos{
+    .infos {
         color: #c9d1d9;
         border-radius: 10px;
         font-size: 15px;
         font-weight: 300;
-        .info-item{
+        .info-item {
             padding: 5px;
             margin: 5px;
-            .number{
+            .number {
                 font-size: 28px;
                 font-weight: 500;
             }
-            
         }
     }
 }
