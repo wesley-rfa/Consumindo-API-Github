@@ -6,6 +6,7 @@ body {
     padding: 0px;
     margin: 0px;
     background: $color_body;
+    overflow-x: hidden;
 }
 
 .header {
@@ -31,21 +32,33 @@ body {
 
     .btn-submit:hover {
         color: #ffffff;
-        background: linear-gradient(45deg,#1a9e76,#1abe8d);
+        background: linear-gradient(45deg, #1a9e76, #1abe8d);
         transform: translateY(-10%);
     }
     .btn-limpar:hover {
         color: #ffffff;
-        background: linear-gradient(45deg,#e60f33,#ff193f);
+        background: linear-gradient(45deg, #e60f33, #ff193f);
         transform: translateY(-10%);
     }
 }
 
+@keyframes slidein {
+    from {
+        transform: translate(1000px);
+    }
+
+    to {
+        transform: translate(0px);
+    }
+}
+
 .card {
+    animation-duration: 1s;
+    animation-name: slidein;
     background-color: #161b22;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 15, 0.4), 0 5px 20px rgba(5, 020, 15, 0.3);
-    transition: 0.5s;
+    transition: 1.5s;
     margin: 20px;
     &:hover {
         background-color: #202731;
@@ -88,17 +101,16 @@ body {
     }
 }
 
-
-#footer{
-    background-color:#161b22;
+#footer {
+    background-color: #161b22;
     color: #ffffff;
     font-size: 16px;
     letter-spacing: 1px;
     transition: 1s;
-    a{
+    a {
         font-weight: 600;
         cursor: pointer;
         text-decoration: none;
-        color: #4EA0FF;
+        color: #4ea0ff;
     }
 }

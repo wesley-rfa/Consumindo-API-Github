@@ -3,7 +3,8 @@ $("#btn_limpar").hide()
 
 //---------------------LIMPA CONTEÚDO----------------------//
 $("#btn_limpar").click(function () {
-    $("#conteudo").html("")
+    $(".card").css("transform", "translateX(2000px)")
+    setTimeout(function () { $("#conteudo").html("") }, 1000);
     $("#btn_limpar").hide()
 });
 
@@ -15,7 +16,6 @@ $("#btn_buscar").click(function () {
     $.ajax({
         url: "https://api.github.com/users/" + usuario, dataType: 'json',
         beforeSend: function () {
-            console.log("Enviandoo")
         }, success: function (res) {
             let concat = `<div class="col-lg-3 align-items-center pt-2 card">
             <div class="align-self-end icon_git"><i class="fa fa-github-square mr-1"></i></div>

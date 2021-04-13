@@ -3,6 +3,7 @@ body {
   padding: 0px;
   margin: 0px;
   background: #0d1117;
+  overflow-x: hidden;
 }
 
 .header {
@@ -42,13 +43,39 @@ body {
           transform: translateY(-10%);
 }
 
+@-webkit-keyframes slidein {
+  from {
+    -webkit-transform: translate(1000px);
+            transform: translate(1000px);
+  }
+  to {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+  }
+}
+
+@keyframes slidein {
+  from {
+    -webkit-transform: translate(1000px);
+            transform: translate(1000px);
+  }
+  to {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+  }
+}
+
 .card {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
   background-color: #161b22;
   border-radius: 15px;
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 15, 0.4), 0 5px 20px rgba(5, 20, 15, 0.3);
           box-shadow: 0 5px 15px rgba(0, 0, 15, 0.4), 0 5px 20px rgba(5, 20, 15, 0.3);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
   margin: 20px;
 }
 
@@ -113,6 +140,6 @@ body {
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
-  color: #4EA0FF;
+  color: #4ea0ff;
 }
 /*# sourceMappingURL=style.css.map */
