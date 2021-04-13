@@ -114,3 +114,18 @@ body {
         color: #4ea0ff;
     }
 }
+
+.modal-content{
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    background-color: #161b22;
+    .btn-fechar{
+        background: linear-gradient(45deg, #e60f33, #ff193f);
+        transition: 0.5s;
+        color: #ffffff;
+        &:hover{
+            transform: translateY(-10%);
+        }
+    }
+}

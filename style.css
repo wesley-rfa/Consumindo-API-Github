@@ -142,4 +142,23 @@ body {
   text-decoration: none;
   color: #4ea0ff;
 }
+
+.modal-content {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  background-color: #161b22;
+}
+
+.modal-content .btn-fechar {
+  background: linear-gradient(45deg, #e60f33, #ff193f);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #ffffff;
+}
+
+.modal-content .btn-fechar:hover {
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
 /*# sourceMappingURL=style.css.map */

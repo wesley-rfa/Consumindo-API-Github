@@ -41,7 +41,8 @@ $("#btn_buscar").click(function () {
             $("#form_usuario").val("")
             $("#btn_limpar").show()
         }, error: function () {
-            console.log("erro!!")
+            $("#modal_erro").modal()
+            $("#user_nao_encontrado").html(usuario)
             $("#form_usuario").val("")
         }
     });
