@@ -52,6 +52,24 @@
 
 
 
+    <!-- Modal usuário -->
+    <div class="modal fade " id="modal_user" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="modal_conteudo" class="card_modal">
+                    
+                    </div>
+                    <div class="row justify-content-end mr-2">
+                        <button type="button" class="btn btn-fechar" data-dismiss="modal">Fechar</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Modal Nenhum usuário encontrado -->
     <div class="modal fade " id="modal_erro" data-backdrop="static" data-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -59,8 +77,9 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <div class="text-center">O usuário <span id="user_nao_encontrado"></span> não foi encontrado!</div>
-                    <div class="text-right mt-2"><button type="button" class="btn btn-fechar" data-dismiss="modal">Fechar</button></div>
-                    
+                    <div class="text-right mt-2"><button type="button" class="btn btn-fechar"
+                            data-dismiss="modal">Fechar</button></div>
+
                 </div>
             </div>
         </div>

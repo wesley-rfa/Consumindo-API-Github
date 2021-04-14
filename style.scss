@@ -9,6 +9,13 @@ body {
     overflow-x: hidden;
 }
 
+a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
 .header {
     background-color: #161b22;
     color: $color_font_header;
@@ -115,17 +122,65 @@ body {
     }
 }
 
-.modal-content{
+.modal-content {
     font-size: 18px;
     letter-spacing: 0.5px;
     color: #ffffff;
     background-color: #161b22;
-    .btn-fechar{
+    .btn-fechar {
         background: linear-gradient(45deg, #e60f33, #ff193f);
         transition: 0.5s;
         color: #ffffff;
-        &:hover{
+        &:hover {
             transform: translateY(-10%);
+        }
+    }
+}
+
+.card_modal {
+    background-color: #161b22;
+    transition: 1.5s;
+    cursor: pointer;
+    img {
+        border-radius: 100px;
+        height: 120px;
+        width: 120px;
+    }
+    .name {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+    }
+    .topico {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        span {
+            color: #c9d1d9;
+            font-size: 14px;
+            font-weight: 300;
+            letter-spacing: 0.3px;
+        }
+    }
+    .user {
+        color: #c9d1d9;
+        font-size: 13px;
+        font-weight: 300;
+    }
+    .infos {
+        color: #c9d1d9;
+        border-radius: 10px;
+        font-size: 15px;
+        font-weight: 300;
+        .info-item {
+            padding: 5px;
+            margin: 5px;
+            .number {
+                font-size: 24px;
+                font-weight: 500;
+            }
         }
     }
 }

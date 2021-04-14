@@ -6,6 +6,14 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .header {
   background-color: #161b22;
   color: #ffffff;
@@ -160,5 +168,62 @@ body {
 .modal-content .btn-fechar:hover {
   -webkit-transform: translateY(-10%);
           transform: translateY(-10%);
+}
+
+.card_modal {
+  background-color: #161b22;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  cursor: pointer;
+}
+
+.card_modal img {
+  border-radius: 100px;
+  height: 120px;
+  width: 120px;
+}
+
+.card_modal .name {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.card_modal .topico {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.card_modal .topico span {
+  color: #c9d1d9;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+
+.card_modal .user {
+  color: #c9d1d9;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.card_modal .infos {
+  color: #c9d1d9;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.card_modal .infos .info-item {
+  padding: 5px;
+  margin: 5px;
+}
+
+.card_modal .infos .info-item .number {
+  font-size: 24px;
+  font-weight: 500;
 }
 /*# sourceMappingURL=style.css.map */
