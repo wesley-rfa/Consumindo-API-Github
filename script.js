@@ -18,7 +18,7 @@ $("#btn_buscar").click(function () {
         beforeSend: function () {
         }, success: function (res) {
             let nome = res.name
-            let concat = `<div class="col-lg-3 align-items-center pt-2 card" onclick="abrirModalUser('${res.login}','${res.avatar_url}','${res.name}','${res.public_repos}','${res.followers}','${res.following}','${res.location}','${res.bio}','${res.html_url}','${res.created_at}','${res.updated_at}')">
+            let concat = `<div class="col-lg-3 align-items-center pt-2 card" onclick="abrirModalUser('${res.login}','${res.avatar_url}','${res.name}','${res.public_repos}','${res.followers}','${res.following}','${res.location}','${res.bio.replace(/(\r\n|\n|\r)/gm, " ")}','${res.html_url}','${res.created_at}','${res.updated_at}')">
             <div class="align-self-end icon_git"><i class="fa fa-github-square mr-1"></i></div>
             <img src="${res.avatar_url}">
             <div class="mt-2 name">${res.name}</div>
@@ -72,7 +72,7 @@ function abrirModalUser(login, foto, nome, repo, seguidores, seguindo, local, bi
         <div class="mt-1 user ">@${login}</div>
     </div>
     <div class="col-9">
-        <div class="mt-2 topico">bio: <span>${bio}</span></div>
+        <div class="mt-2 topico ">Bio: <span >${bio}</span> </div>
         <div class="mt-2 topico ">local: <span >${local}</span> </div>
         <div class="mt-2 topico ">Data Cadastro: <span >${dataCadastro}</span></div>
         <div class="mt-2 topico ">Última atualização: <span >${dataAtualizacao}</span></div>
