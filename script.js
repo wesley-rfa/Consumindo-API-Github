@@ -1,11 +1,11 @@
+//------------------ESCONDE BOTÃO DE LIMPAR----------------//
 $("#btn_limpar").hide()
-
 
 //---------------------LIMPA CONTEÚDO----------------------//
 $("#btn_limpar").click(function () {
-    $(".card").css("transform", "translateX(2000px)")
-    setTimeout(function () { $("#conteudo").html("") }, 1000);
-    $("#btn_limpar").hide()
+    $(".card").css("transform", "translateX(200px)")
+    //setTimeout(function () { $("#conteudo").html("") }, 2000);
+    //$("#btn_limpar").hide()
 });
 
 //------------------BUSCA USUÁRIO NA API-------------------//
@@ -18,24 +18,24 @@ $("#btn_buscar").click(function () {
         beforeSend: function () {
         }, success: function (res) {
             let nome = res.name
-            let concat = `<div class="col-lg-3 align-items-center pt-2 card" onclick="abrirModalUser('${res.login}','${res.avatar_url}','${res.name}','${res.public_repos}','${res.followers}','${res.following}','${res.location}','${res.bio.replace(/(\r\n|\n|\r)/gm, " ")}','${res.html_url}','${res.created_at}','${res.updated_at}')">
+            let concat = `<div class="col-md-3 align-items-center pt-2 card" onclick="abrirModalUser('${res.login}','${res.avatar_url}','${res.name}','${res.public_repos}','${res.followers}','${res.following}','${res.location}','${res.bio.replace(/(\r\n|\n|\r)/gm, " ")}','${res.html_url}','${res.created_at}','${res.updated_at}')">
             <div class="align-self-end icon_git"><i class="fa fa-github-square mr-1"></i></div>
             <img src="${res.avatar_url}">
             <div class="mt-2 name">${res.name}</div>
             <div class="mt-1 user">@${res.login}</div>
-            <div class="row text-center mt-1 mb-2 p-2 infos">
-                <div class="info-item">
+            <div class="row text-center mt-1 mb-2 infos">
+                <span class="info-item">
                     <div class="number">${res.followers}</div>
-                    <div> <i class="fa fa-users mr-1"></i>Seguidores</div>
-                </div>
-                <div class="info-item">
+                    <div><i class="fa fa-users mr-1"></i>Seguidores</div>
+                </span>
+                <span class="info-item">
                     <div class="number">${res.public_repos}</div>
-                    <div> <i class="fa fa-github-square mr-1"></i>Repositórios</div>
-                </div>
-                <div class="info-item">
+                    <div><i class="fa fa-github-square mr-1"></i>Repositórios</div>
+                </span>
+                <span class=" info-item">
                     <div class="number">${res.following}</div>
-                    <div> <i class="fa fa-users mr-1"></i>Seguindo</div>
-                </div>
+                    <div><i class="fa fa-users mr-1"></i>Seguindo</div>
+                </span>
             </div>
         </div>`
             $("#conteudo").append(concat)
@@ -65,7 +65,7 @@ function abrirModalUser(login, foto, nome, repo, seguidores, seguindo, local, bi
 
     $("#modal_user").modal()
 
-    let concat = `<a href="${url}" target="_blank"><div class="row">
+    let card = `<a href="${url}" target="_blank"><div class="row">
     <div class="col-3 text-center">
         <img src="${foto}">
         <div class="mt-2 name">${nome}</div>
@@ -78,7 +78,6 @@ function abrirModalUser(login, foto, nome, repo, seguidores, seguindo, local, bi
         <div class="mt-2 topico ">Última atualização: <span >${dataAtualizacao}</span></div>
     </div>
 </div>
-
 
 <div class="row justify-content-center text-center mt-2 infos">
         <div class="info-item">
@@ -94,5 +93,5 @@ function abrirModalUser(login, foto, nome, repo, seguidores, seguindo, local, bi
             <div> <i class="fa fa-users mr-1"></i>Seguindo</div>
         </div>
 </div></a>`
-    $("#modal_conteudo").html(concat)
+    $("#modal_conteudo").html(card)
 }

@@ -25,6 +25,10 @@ a{
     }
     .titulo {
         font-size: 26px;
+        color: #4ea0ff;
+        a{
+            color: #4ea0ff; 
+        }
     }
 }
 
@@ -58,6 +62,7 @@ a{
         transform: translate(0px);
     }
 }
+
 
 .card {
     animation-duration: 1s;
@@ -95,11 +100,10 @@ a{
     .infos {
         color: #c9d1d9;
         border-radius: 10px;
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 300;
         .info-item {
-            padding: 5px;
-            margin: 5px;
+            margin-right: 15px;
             .number {
                 font-size: 28px;
                 font-weight: 500;

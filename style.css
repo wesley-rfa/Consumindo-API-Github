@@ -6,7 +6,7 @@ body {
   overflow-x: hidden;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -26,18 +26,11 @@ a:hover {
 
 .header .titulo {
   font-size: 26px;
+  color: #4ea0ff;
 }
 
-.titulo{
-  cursor: pointer;
-}
-
-.titulo a{
-  color: white;
-}
-
-.titulo a:hover{
-  color:#f0f0f0;
+.header .titulo a {
+  color: #4ea0ff;
 }
 
 #input_area .btn {
@@ -133,13 +126,12 @@ a:hover {
 .card .infos {
   color: #c9d1d9;
   border-radius: 10px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 300;
 }
 
 .card .infos .info-item {
-  padding: 5px;
-  margin: 5px;
+  margin-right: 15px;
 }
 
 .card .infos .info-item .number {
