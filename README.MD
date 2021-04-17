@@ -33,9 +33,17 @@ Com o JavaScript foi utilizado o JQquery e AJAX para requisições assíncronas.
 
 **6** - É possível limpar todas as buscas com o botão de limpar.
 
+## Exemplos
+
 
 ![](ex/1.png)
 
+
+
+
 ![](ex/2.png)
+
+
+
 
 ![](ex/3.png)
