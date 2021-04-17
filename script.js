@@ -3,9 +3,10 @@ $("#btn_limpar").hide()
 
 //---------------------LIMPA CONTEÚDO----------------------//
 $("#btn_limpar").click(function () {
-    $(".card").css("transform", "translateX(200px)")
-    //setTimeout(function () { $("#conteudo").html("") }, 2000);
-    //$("#btn_limpar").hide()
+    event.preventDefault()
+    $(".card").css("transform", "translateX(2000px)")
+    setTimeout(function () { $("#conteudo").html("") }, 2000);
+    $("#btn_limpar").hide()
 });
 
 //------------------BUSCA USUÁRIO NA API-------------------//
