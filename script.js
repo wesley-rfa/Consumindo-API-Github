@@ -18,8 +18,13 @@ $("#btn_buscar").click(function () {
         url: "https://api.github.com/users/" + usuario, dataType: 'json',
         beforeSend: function () {
         }, success: function (res) {
-            let nome = res.name
-            let concat = `<div class="col-md-3 align-items-center pt-2 card" onclick="abrirModalUser('${res.login}','${res.avatar_url}','${res.name}','${res.public_repos}','${res.followers}','${res.following}','${res.location}','${res.bio.replace(/(\r\n|\n|\r)/gm, " ")}','${res.html_url}','${res.created_at}','${res.updated_at}')">
+            let bio
+            if(res.bio == null){
+                bio = ""
+            }else{
+                bio = res.bio.replace(/(\r\n|\n|\r)/gm, " ")
+            }
+            let concat = `<div class="col-md-3 align-items-center pt-2 card" onclick="abrirModalUser('${res.login}','${res.avatar_url}','${res.name}','${res.public_repos}','${res.followers}','${res.following}','${res.location}','${bio}','${res.html_url}','${res.created_at}','${res.updated_at}')">
             <div class="align-self-end icon_git"><i class="fa fa-github-square mr-1"></i></div>
             <img src="${res.avatar_url}">
             <div class="mt-2 name">${res.name}</div>
